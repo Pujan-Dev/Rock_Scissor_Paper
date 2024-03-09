@@ -1,4 +1,5 @@
 import random
+
 def RPS(p1,p2):
     p1= p1.upper()
     p2 =p2.upper()
@@ -17,8 +18,6 @@ def RPS(p1,p2):
             
 
 # MAIN GAME 
-
-
 game = True #for game on state
 moves = ["R","S","P"] #for ai moves
 
@@ -27,6 +26,7 @@ print("Welcome to Rock, Scissor,Paper Game\n")
 print("Our task is to play as a player and try to win this game against an AI \nType R for Rock\nP for Paper\nS for Scissor\nQ to Exit the game.\n")
 # to get player1 name 
 Player1 = input("Enter player1 name:")
+
 while(game):
     AI= random.randint(0,2)
     p2 = moves[AI]
